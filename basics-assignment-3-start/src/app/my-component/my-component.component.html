@@ -1,0 +1,10 @@
+<button 
+class="btn btn-primary"
+(click)="onButtonClick()"
+>Display details</button>
+<p *ngIf="!isHidden;">Secret password = tuna</p>
+
+<p *ngFor="let timestamp of myArray; let i = index"
+[ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+[ngClass]="{colorStyle: i >= 4}"
+>{{timestamp}}</p>
