@@ -3,7 +3,7 @@
         <button class="btn btn-success">New Recipe</button>
     </div>
 </div>
-<hr>
+<hr>        
 <div class="row">
     <div class="col-xs-12">
     <a  *ngFor="let recipe of recipes" 
@@ -14,7 +14,7 @@
         </div>
         <span class="pull-right">
             <img  
-            [src] = "recipe.imagePath"
+            src = "{{recipe.imagePath}}"
             alt="{{recipe.name}}" 
             class="img-responsive" style="max-height: 50px;">
         </span>
